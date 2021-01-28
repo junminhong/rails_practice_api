@@ -1,0 +1,19 @@
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: dfcmm3dg3f1pao
+  host: ec2-34-194-198-176.compute-1.amazonaws.com
+  username: wrilcujdlyesmg
+  password: 6ee7f8a37b748821084cd01af4a6d177d44fe8c19c1f622aba79098a5f3cf2cf
+  pool: 25
+  port: 5432
+
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: dfcmm3dg3f1pao
+  host: ec2-34-194-198-176.compute-1.amazonaws.com
+  username: wrilcujdlyesmg
+  password: 6ee7f8a37b748821084cd01af4a6d177d44fe8c19c1f622aba79098a5f3cf2cf
+  pool: 25
+  port: 5432
