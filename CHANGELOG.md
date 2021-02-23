@@ -1,3 +1,7 @@
+### 2021/02/02 v0.2.0
+1. 修正命名
+2. 優化raw data大量新增
+
 ### 2021/01/29 v0.1.0
 1. add users raw json parse and insert to db
 2. add pharmacies raw json parse and inset to db

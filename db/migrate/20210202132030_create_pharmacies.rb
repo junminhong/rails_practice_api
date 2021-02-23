@@ -1,6 +1,6 @@
-class CreatePharmacyStores < ActiveRecord::Migration[6.0]
+class CreatePharmacies < ActiveRecord::Migration[6.0]
   def change
-    create_table :pharmacy_stores do |t|
+    create_table :pharmacies do |t|
       t.string :name
       t.float :cash_balance
       t.timestamps

@@ -10,31 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_28_155457) do
+ActiveRecord::Schema.define(version: 2021_02_02_132257) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "pharmacy_store_masks", force: :cascade do |t|
-    t.integer "pharmacy_store_id"
-    t.string "pharmacy_mask_name"
-    t.float "pharmacy_mask_price"
+  create_table "pharmacies", force: :cascade do |t|
+    t.string "name"
+    t.float "cash_balance"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "pharmacy_store_open_times", force: :cascade do |t|
-    t.integer "pharmacy_store_id"
+  create_table "pharmacy_masks", force: :cascade do |t|
+    t.integer "pharmacy_id"
+    t.string "name"
+    t.float "price"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "pharmacy_open_times", force: :cascade do |t|
+    t.integer "pharmacy_id"
     t.string "week"
     t.time "open_time"
     t.time "close_time"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "pharmacy_stores", force: :cascade do |t|
-    t.string "name"
-    t.float "cash_balance"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :mask
       resources :todos
-      resources :pharmacy_stores
+      resources :pharmacies
       resources :pharmacy_masks
       resources :users
       resources :user_purchase_histories

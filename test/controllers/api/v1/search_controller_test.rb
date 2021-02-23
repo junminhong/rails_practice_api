@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PharmacyStoreOpenTimeTest < ActiveSupport::TestCase
+class Api::V1::SearchControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
